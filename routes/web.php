@@ -19,4 +19,3 @@ Route::put('/books/{id}', [BooksController::class, 'update']);
 
 // 刪除特定 ID 的書籍
 Route::delete('/books/{id}', [BooksController::class, 'destroy']);
-Route::post('/books', [BooksController::class, 'store']);

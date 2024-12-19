@@ -15,7 +15,7 @@ class BooksController extends Controller
     }
 
     public function store(Request $request)
-    {
+    {   
         // 驗證輸入資料
         $validated = $request->validate([
             'title' => 'required|string|max:10',

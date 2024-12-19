@@ -7,7 +7,8 @@ use App\Http\Controllers\BooksController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
-})->middleware('auth:sanctum');
+});
+// ->middleware('auth:sanctum');
 
 Route::post('/books', [BooksController::class, 'store']);
 Route::get('/test', function () {
